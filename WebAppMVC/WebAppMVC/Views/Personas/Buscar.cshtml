@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Buscar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Buscar</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar Por ID de Persona</title>
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <label>ID de Persona: </label>
+            <input type="text" class="form-control" id="idPersona" />
+        </div>
+
+       
+        <button type="button" class="btn btn-primary" id="btnBuscarPersona">Buscar</button>
+        <div id="mostrarDatos"></div>
+        <div id="mensaje"></div>
+
+
+    </form>
+
+    @section scripts {
+
+        <script src="~/Scripts/script.js"></script>
+
+    }
+</body>
+</html>
+
+
+
